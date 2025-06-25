@@ -1,0 +1,30 @@
+# 智谱AI GLM-4 模型依赖
+# 基于官方API文档和最佳实践
+
+# 智谱AI SDK
+zhipuai>=2.0.0
+
+# HTTP请求库
+httpx>=0.25.0
+requests>=2.31.0
+
+# 异步支持
+aiohttp>=3.8.0
+
+# JSON处理
+orjson>=3.9.0
+
+# 重试机制
+tenacity>=8.2.0
+
+# 日志和监控
+structlog>=23.2.0
+
+# 环境变量管理
+python-dotenv>=1.0.0
+
+# 数据验证
+pydantic>=2.7.0
+
+# 类型提示
+typing-extensions>=4.8.0

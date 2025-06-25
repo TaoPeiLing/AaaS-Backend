@@ -1,0 +1,54 @@
+# 智谱AI GLM-4 模型配置
+# 基于官方API文档：https://open.bigmodel.cn/dev/api/normal-model/glm-4
+
+zhipuai:
+  # 基本配置
+  api_key: ${ZHIPUAI_API_KEY}
+  base_url: "https://open.bigmodel.cn/api/paas/v4/"
+  
+  # 默认模型配置
+  default_model: "glm-4"
+  
+  # 模型参数
+  model_params:
+    temperature: 0.7
+    max_tokens: 8192
+    top_p: 0.9
+    stream: true
+    
+  # 请求配置
+  request_config:
+    timeout: 60
+    max_retries: 3
+    retry_delay: 1
+    
+  # 支持的模型列表
+  available_models:
+    - name: "glm-4"
+      description: "智谱AI第四代大模型"
+      max_tokens: 8192
+      supports_streaming: true
+      supports_function_calling: true
+      
+    - name: "glm-4v"
+      description: "智谱AI多模态大模型"
+      max_tokens: 8192
+      supports_streaming: true
+      supports_vision: true
+      
+    - name: "glm-3-turbo"
+      description: "智谱AI第三代大模型加速版"
+      max_tokens: 4096
+      supports_streaming: true
+      
+  # 错误处理
+  error_handling:
+    rate_limit_retry: true
+    exponential_backoff: true
+    max_backoff_time: 60
+    
+  # 日志配置
+  logging:
+    log_requests: true
+    log_responses: false  # 不记录响应内容保护隐私
+    log_errors: true
