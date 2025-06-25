@@ -1,0 +1,70 @@
+# LangChain核心包 - 基于专家建议使用v0.3（兼容性优化）
+langchain==0.3.0
+langchain-core==0.3.0
+langchain-openai==0.2.0
+langchain-community==0.3.0
+
+# LangGraph - 专家推荐用于Agent开发（版本兼容性确认）
+langgraph>=0.2.20,<0.3.0
+
+# LangServe - 用于部署REST API
+langserve==0.3.0
+
+# FastAPI框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# 数据库相关
+sqlalchemy==2.0.23
+alembic==1.12.1
+# sqlite3  # Python内置，无需安装
+
+# 缓存和会话管理
+redis==5.0.1
+python-jose[cryptography]==3.3.0
+
+# 向量数据库 - 专家推荐ChromaDB
+chromadb==0.4.15
+
+# 数据验证和序列化
+pydantic>=2.7.4,<3.0.0
+pydantic-settings>=2.4.0,<3.0.0
+
+# 国产模型支持
+requests==2.31.0
+httpx==0.25.2
+
+# 异步支持
+asyncio
+aiofiles==23.2.1
+
+# 监控和日志
+structlog==23.2.0
+prometheus-client==0.19.0
+
+# 开发和测试
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+isort==5.12.0
+mypy==1.7.1
+
+# 环境配置
+python-dotenv==1.0.0
+
+# 安全
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# 工具类
+tenacity==8.2.3  # 重试机制
+
+# 版本兼容性检查工具
+packaging==23.2
+
+# 开发和测试工具（可选，用于 CI/CD）
+pre-commit==3.6.0
+pytest-cov==4.1.0
+
+# 类型检查
+types-requests==2.31.0.10
